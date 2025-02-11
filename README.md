@@ -11,16 +11,16 @@
 
 | **Metric** | **Before Noise Removal** | **After Noise Removal** | **Change (%)** |
 |------------|---------------------|------------------|------------------|
-| **Nodes** | 1000 | 357 | 🔻 **-64.3%** (Noise removed) |
-| **Edges** | 3503 | 811 | 🔻 **-76.8%** (Sparse edges removed) |
-| **Density** | 0.0070 | 0.0114 | 🔺 **+62.9%** (Graph more connected) |
+| **Nodes** | 1000 | 401 | 🔻 **-59.9%** (Noise removed) |
+| **Edges** | 3503 | 934 | 🔻 **-73.3%** (Sparse edges removed) |
+| **Density** | 0.0070 | 0.0116 | 🔺 **+65.7%** (Graph more connected) |
 
 ### **Analysis:**
-- **643 nodes were removed**, indicating that a large portion of the original graph was noise.
-- **Edges reduced by 76.8%**, showing that many weakly connected edges were eliminated.
-- **Density increased by 62.9%**, proving that the remaining graph is **more structured and connected**.
+- **599 nodes were removed**, confirming that nearly **60% of the original graph** was noise.
+- **Edges reduced by 73.3%**, showing a substantial reduction in weakly connected components.
+- **Density increased by 65.7%**, proving that the remaining graph is **more structured and cohesive**.
 
-✅ **Noise removal effectively removed weakly connected nodes, preserving a denser and more meaningful network.**
+✅ **Noise removal effectively removed weakly connected nodes, resulting in a cleaner and more meaningful network.**
 
 ---
 
@@ -28,20 +28,20 @@
 
 | **Metric** | **Before Noise Removal** | **After Noise Removal** | **Change (%)** |
 |------------|---------------------|------------------|------------------|
-| **Avg Degree** | 7.0060 | 4.5440 | 🔻 **-35.1%** (Fewer but stronger connections) |
-| **Modularity** | 0.1025 | 0.4449 | 🔺 **+334.2%** (Stronger community structure) |
-| **Clustering Coefficient** | 0.6309 | 0.4646 | 🔻 **-26.3%** (Fewer local clusters) |
-| **Largest Connected Component Size** | 1000 | 291 | 🔻 **-70.9%** (Smaller core structure) |
-| **Avg Shortest Path Length** | 4.0136 | 4.1683 | 🔺 **+3.9%** (Slightly longer paths due to noise removal) |
+| **Avg Degree** | 7.0060 | 4.6608 | 🔻 **-33.5%** (Fewer but stronger connections) |
+| **Modularity** | 0.1025 | 0.3862 | 🔺 **+276.9%** (Stronger community structure) |
+| **Clustering Coefficient** | 0.6309 | 0.4688 | 🔻 **-25.7%** (Fewer local clusters) |
+| **Largest Connected Component Size** | 1000 | 336 | 🔻 **-66.4%** (Smaller core structure) |
+| **Avg Shortest Path Length** | 4.0136 | 4.2483 | 🔺 **+5.8%** (Slightly longer paths due to noise removal) |
 
 ### **Analysis:**
-- **Average Degree dropped (-35.1%)**, meaning nodes now maintain fewer but **more essential** connections.
-- **Modularity increased (+334.2%)**, highlighting that **community detection significantly improved**.
-- **Clustering Coefficient decreased (-26.3%)**, indicating that local clusters became less redundant.
-- **Largest Connected Component (LCC) size reduced (-70.9%)**, confirming that **only the strongest core remains**.
-- **Shortest Path Length increased (+3.9%)**, showing that nodes are now **more spread out but still connected**.
+- **Average Degree dropped (-33.5%)**, meaning nodes now maintain fewer but **more meaningful** connections.
+- **Modularity increased (+276.9%)**, demonstrating that **community structure has improved significantly**.
+- **Clustering Coefficient decreased (-25.7%)**, suggesting that local clusters became **less redundant**.
+- **Largest Connected Component (LCC) size reduced (-66.4%)**, confirming that **only the strongest core remains**.
+- **Shortest Path Length increased (+5.8%)**, indicating a **more structured but slightly elongated graph**.
 
-✅ **The graph is now more structured, with clearer community boundaries and reduced noise.**
+✅ **The network is now more structured, with clearer community boundaries and significantly reduced noise.**
 
 ---
 
@@ -49,12 +49,11 @@
 
 | **Observation** | **Effect of Noise Removal** |
 |-----------------|---------------------------|
-| 🔹 **Graph is smaller** | Reduced from **1000 → 357 nodes**, eliminating **64.3% noise**. |
+| 🔹 **Graph is smaller** | Reduced from **1000 → 401 nodes**, eliminating **59.9% noise**. |
 | 🔹 **More meaningful edges** | Retained **core connectivity** with stronger structural integrity. |
-| 🔹 **Community structure vastly improved** | **Modularity increased from 0.1025 → 0.4449**. |
+| 🔹 **Community structure vastly improved** | **Modularity increased from 0.1025 → 0.3862**. |
 | 🔹 **Graph properties changed significantly** | Increased **density**, improved **node importance**, and enhanced **community detection**. |
 
-✅ **Noise removal effectively improved community structure, connectivity, and modularity, ensuring a cleaner and more structured network.**
+✅ **Noise removal effectively improved community structure, connectivity, and modularity, ensuring a more structured and interpretable network.**
 
 ---
-
