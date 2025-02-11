@@ -1,5 +1,10 @@
 # GraphDBSCAN
 
+<p align="center">
+  <img src="GraphDBScan.png" alt="GraphDBScan" width="400" height="400">
+</p>
+
+
 # **Effect of Noise Removal on Graph Structure and Community Detection with Auto-encoder**
 
 ## **1. Graph Reduction & Noise Removal Impact**
